@@ -1,7 +1,4 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
-
-const config: DocsThemeConfig = {
+const config = {
   logo: <span style={{ fontWeight: 'bold' }}>📚 我的知识库</span>,
   project: {
     link: 'https://github.com/your-username/knowledge-base',
