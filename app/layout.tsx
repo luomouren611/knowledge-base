@@ -2,6 +2,7 @@ import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
+import './globals.css'
 
 export const metadata = {
   title: '我的知识库',
@@ -24,7 +25,7 @@ export default async function RootLayout({
   const pageMap = await getPageMap()
   
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="zh-CN" dir="ltr" suppressHydrationWarning>
       <Head />
       <body>
         <Layout

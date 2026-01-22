@@ -1,0 +1,9 @@
+/* 强制 LTR 方向 */
+html, body {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+* {
+  direction: ltr;
+}
