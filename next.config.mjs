@@ -10,5 +10,7 @@ const withNextra = nextra({
 
 export default withNextra({
   reactStrictMode: true,
-  i18n: undefined
+  i18n: undefined,
+  // 强制禁用缓存
+  generateBuildId: () => Date.now().toString()
 })
