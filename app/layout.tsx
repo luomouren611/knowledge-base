@@ -27,7 +27,7 @@ export default async function RootLayout({
   return (
     <html lang="zh-CN" dir="ltr" suppressHydrationWarning>
       <Head />
-      <body>
+      <body dir="ltr" style={{ direction: 'ltr', textAlign: 'left' }}>
         <Layout
           navbar={navbar}
           footer={footer}
