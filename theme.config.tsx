@@ -23,9 +23,7 @@ const config = {
   },
   search: {
     placeholder: '搜索文档...'
-  },
-  direction: 'ltr',
-  i18n: []
+  }
 }
 
 export default config
