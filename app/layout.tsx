@@ -1,5 +1,5 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
+import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 
@@ -21,15 +21,17 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const pageMap = await getPageMap()
+  
   return (
-    <html lang="zh-CN" dir="ltr" suppressHydrationWarning>
+    <html lang="zh-CN" suppressHydrationWarning>
       <Head />
       <body>
         <Layout
           navbar={navbar}
           footer={footer}
-          pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/your-username/knowledge-base"
+          pageMap={pageMap}
+          docsRepositoryBase="https://github.com/luomouren611/knowledge-base"
           editLink="在 GitHub 上编辑此页"
           sidebar={{ defaultMenuCollapseLevel: 1, toggleButton: true }}
           toc={{ title: '目录' }}
