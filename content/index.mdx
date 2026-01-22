@@ -1,0 +1,45 @@
+# 欢迎来到我的知识库 👋
+
+这是一个基于 [Nextra 4](https://nextra.site/) + Next.js 14 搭建的个人知识库，用于存放学习笔记和日常记录。
+
+## 特性
+
+- 📝 **Markdown 支持** - 完全支持 Markdown 和 MDX 语法
+- 🔍 **全文搜索** - 内置搜索功能，快速定位内容
+- 🌙 **暗色模式** - 支持亮色/暗色主题切换
+- 📱 **响应式设计** - 完美适配各种设备
+- 🚀 **快速部署** - 支持 Vercel、GitHub Pages 一键部署
+
+## 快速开始
+
+```bash
+# 本地开发
+pnpm dev
+
+# 构建生产版本
+pnpm build
+
+# 启动生产服务
+pnpm start
+```
+
+## 目录结构
+
+```
+content/
+├── index.mdx          # 首页（当前页面）
+├── notes/             # 学习笔记
+│   ├── _meta.ts       # 导航配置
+│   ├── javascript.md  # JavaScript 笔记
+│   └── react.md       # React 笔记
+├── daily/             # 日常记录
+└── projects/          # 项目文档
+```
+
+## 如何添加新文档
+
+1. 在 `content` 目录下创建 `.md` 或 `.mdx` 文件
+2. 更新对应目录的 `_meta.ts` 配置导航顺序和标题
+3. 运行 `pnpm dev` 查看效果
+
+开始记录你的知识吧！ 🎉
