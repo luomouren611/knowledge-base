@@ -4,9 +4,11 @@ const withNextra = nextra({
   latex: true,
   search: {
     codeblocks: false
-  }
+  },
+  defaultShowCopyCode: true
 })
 
 export default withNextra({
-  reactStrictMode: true
+  reactStrictMode: true,
+  i18n: undefined
 })

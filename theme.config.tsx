@@ -1,12 +1,9 @@
 const config = {
   logo: <span style={{ fontWeight: 'bold' }}>📚 我的知识库</span>,
   project: {
-    link: 'https://github.com/your-username/knowledge-base',
+    link: 'https://github.com/luomouren611/knowledge-base',
   },
-  chat: {
-    link: 'https://discord.gg',
-  },
-  docsRepositoryBase: 'https://github.com/your-username/knowledge-base',
+  docsRepositoryBase: 'https://github.com/luomouren611/knowledge-base',
   footer: {
     text: '个人知识库 © 2026',
   },
@@ -26,7 +23,9 @@ const config = {
   },
   search: {
     placeholder: '搜索文档...'
-  }
+  },
+  direction: 'ltr',
+  i18n: []
 }
 
 export default config
